@@ -2,10 +2,6 @@
     font-family: 'Outfit';
     src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 600 700;
-
-    font-family: 'Young Serif';
-    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
-    font-weight: 400;
 }
 
 @font-face {
@@ -28,6 +24,10 @@
     --color-primary-1: hsl(332, 51%, 32%);
     --color-primary-2: hsl(330, 100%, 98%);
     --color-secondary: hsl(14, 45%, 36%);
+    --space-xl: 2.5rem;
+    --space-lg: 2rem;
+    --space-md: 1.5rem;
+    --space-sm: 1rem;
 }
 
 * {
@@ -39,6 +39,33 @@
 body {
     font-family: var(--font-primary);
     font-weight: var(--font-weight-regular);
+    font-size: var(--space-sm);
     background-color: var(--color-neutral-0);
     color: var(--color-neutral-4);
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Font styles */
+
+h1 {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--space-lg);
+}
+h2 {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--space-md);
+    color: var(--color-secondary);
+}
+
+main {
+    flex: 1;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
 }
