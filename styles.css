@@ -64,6 +64,10 @@ h2 {
 main {
     flex: 1;
 }
+.recipe-image img {
+    width: 100%;
+    height: auto;
+}
 .content {
     display: flex;
     flex-direction: column;
