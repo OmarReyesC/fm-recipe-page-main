@@ -115,3 +115,18 @@ main {
     border-bottom: 1px solid var(--color-neutral-2);
     padding-bottom: var(--space-lg);
 }
+.nutrition-table tr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--color-neutral-2);
+    padding: var(--space-sm) var(--space-lg);
+}
+.nutrition th{
+    font-weight: var(--font-weight-regular);
+    grid-column: span first;
+    justify-self: start;
+}
+.nutrition td{
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-secondary);
+}
