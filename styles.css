@@ -40,6 +40,7 @@ body {
     font-family: var(--font-primary);
     font-weight: var(--font-weight-regular);
     font-size: var(--space-sm);
+    line-height: var(--space-md);
     background-color: var(--color-neutral-0);
     color: var(--color-neutral-4);
     height: 100svh;
@@ -81,11 +82,21 @@ main {
     gap: var(--space-md);
 }
 
+/* Styles for list items and markers */
 .content section ul, ol {
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
-    list-style-position: inside;
+    padding-left: var(--space-md);
+    list-style-position: outside;
+}
+.content section ul li, .content section ol li {
+    padding-left: var(--space-sm);
+}
+.instructions ol li::marker {
+    color: var(--color-secondary);
+    font-family: var(--font-primary); 
+    font-weight: var(--font-weight-bold);
 }
 
 /* Styles for Preparation Time section */
@@ -98,4 +109,9 @@ main {
     font-family: var(--font-primary);
     font-weight: var(--font-weight-semibold);
     color: var(--color-primary-1);
+}
+
+.content .ingredients, .content .instructions {
+    border-bottom: 1px solid var(--color-neutral-2);
+    padding-bottom: var(--space-lg);
 }
