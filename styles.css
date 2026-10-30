@@ -130,3 +130,8 @@ main {
     font-weight: var(--font-weight-semibold);
     color: var(--color-secondary);
 }
+
+footer {
+    text-align: center;
+    padding: var(--space-md);
+}
